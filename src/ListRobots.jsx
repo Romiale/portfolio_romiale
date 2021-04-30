@@ -1,55 +1,47 @@
-import Card from './Card';
 import { React, useState, useEffect } from 'react';
+import CardList from './CardList';
 
 const ListRobots = () => {
-    const [Users, setUsers] = useState([])
-    const [UsersAffiche, setUserAffiche] = useState([])
+    const [robots, setRobots] = useState([])
+    const [filteredRobots, setFilteredRobots] = useState(robots)
     useEffect(() => {
-        let image = 'https://robohash.org/'
-        let requete = "https://jsonplaceholder.typicode.com/users/";
-        fetch(requete)
-            .then(function (res) {
-                res.json()
-                    .then(function (data) {
-                        let newUsers = data.map(user => {
-                            return {
-                                id: user.id,
-                                name: user.name,
-                                email: user.email,
-                                src: image + user.id,
-                                username: user.username,
-                                address: user.address,
-                                phone: user.phone
-                            }
-                        })
-                        setUsers(newUsers)
-                        setUserAffiche(newUsers)
-                    })
-            })
+        fetch("https://jsonplaceholder.typicode.com/users/")
+            .then(transformRobotsDataAndSetState)
     }, [])
 
-    const research = (event) => {
+    const transformRobotsDataAndSetState = (res) => {
+        const sourceImage = 'https://robohash.org/'
+        res.json()
+            .then(data => {
+                const robots = data.map(robot => {
+                    return {
+                        id: robot.id,
+                        name: robot.name,
+                        email: robot.email,
+                        src: sourceImage + robot.id,
+                        username: robot.username,
+                        address: robot.address,
+                        phone: robot.phone
+                    }
+                })
+                setRobots(robots)
+                setFilteredRobots(robots)
+            })
+    }
+    const search = event => {
         let value = event.target.value;
-        let regex = new RegExp(value, 'gi');
-        const Robots = Users.filter(Element => {
-            return regex.test(Element.name);
-        })
-        setUserAffiche(Robots)
+        const searchResult = robots.filter(robot => robot.name.toLowerCase().includes(value.toLowerCase()))
+        setFilteredRobots(searchResult)
     }
 
     return (
         <div className="col-10 offset-1 bg-light d-flex row justify-content-center">
-            <h1 className="text-center">Mes amis Robots</h1>
-            <div className="col-md-3">
-                <input type="text" className="form-control m-3" placeholder="Entrez un nom" onChange={research} />
+            <h1 className="text-center mt-1">Mes amis Robots</h1>
+            <div className="col-md-4">
+                <input type="text" className="form-control my-4 border-secondary col-12" placeholder="Entrez un nom" onChange={search} />
             </div>
-            <div className="col-md-12 d-flex flex-wrap justify-content-center">
-                {
-                    UsersAffiche.map(user => {
-
-                        return <Card key={user.id} user={user} />
-                    })
-                }
+            <div>
+                <CardList robots={filteredRobots} />
             </div>
         </div>
     )
