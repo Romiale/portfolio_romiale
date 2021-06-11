@@ -1,0 +1,97 @@
+@import '../style/mixins.scss';
+@import '../style/colors.scss';
+
+.projects {
+    height: auto;
+    width: 100%;
+    background-color: $dark_color;
+
+    h2 {
+        @include section-title;
+        text-align: center;
+        padding: 2% 0;
+    }
+
+    hr {
+        margin: 0 auto;
+        width: 20%;
+        height: 3px;
+        background-color: $bleu_color;
+    }
+
+    .projects_list {
+        @include d-flex-row-evenly;
+        flex-wrap: wrap;
+        padding: 3%;
+
+        .project_item {
+            width: 26%;
+            margin: 2% 0;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.03);
+                cursor: pointer;
+            }
+
+            @media (max-width:770px) {
+                width: 45%;
+                margin: 1%;
+            }
+
+            div {
+                width: 100%;
+                background-color: $gray_color;
+                border-radius: 5px;
+                padding: 4% 4% 0 4%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .project_item-comment {
+                @include d-flex-row-evenly;
+                align-items: center;
+                width: 100%;
+                padding: 2% 0;
+
+                h3 {
+                    color: #fff;
+                    font-size: 1em;
+                    font-weight: bold;
+
+                    @media (max-width:770px) {
+                        font-size: 0.6em;
+                    }
+
+                }
+
+                span {
+                    color: #fff;
+                    background: $bleu_color;
+                    font-size: 0.8em;
+                    padding: 0 1%;
+                    border-radius: 5px;
+                }
+
+                div {
+                    width: 10%;
+                    height: 15%;
+                    padding: 0 3%;
+                    background: $dark_color;
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: $bleu_color;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,87 @@
+@import '../style/mixins.scss';
+@import '../style/colors.scss';
+
+.services {
+    @include d-flex-row-center;
+    flex-wrap: wrap;
+    padding: 2%;
+    height: auto;
+    width: 100%;
+    background-color: $bleu_color;
+
+    .services_comment {
+        width: 20%;
+        padding-left: 4%;
+
+        @media (max-width:770px) {
+            width: 90%;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        p {
+            background-image: url('../images/competence.svg');
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            color: white;
+            font-size: 0.9em;
+            font-weight: 400;
+        }
+    }
+
+    .services_illustration {
+        @include d-flex-row-evenly;
+        flex-wrap: wrap;
+        width: 75%;
+
+        @media (max-width:770px) {
+            width: 90%;
+            margin: 2%;
+        }
+
+        div {
+            padding: 2%;
+            width: 25%;
+            height: auto;
+            border-radius: 5px;
+            background-color: $dark_color;
+
+            @media (max-width:770px) {
+                width: 45%;
+                margin: 2%;
+                padding: 4%;
+                height: auto;
+            }
+
+            img {
+                width: 20%;
+                margin-bottom: 10%;
+            }
+
+            h4 {
+                color: $bleu_color;
+                font-size: 1.3em;
+            }
+
+            &:nth-child(2) {
+                img {
+                    width: 30%;
+                }
+
+                p {
+                    border-bottom: 3px solid $bleu_color;
+                    padding-bottom: 3%;
+                }
+            }
+
+            p {
+                color: white;
+                font-size: 0.9em;
+                font-weight: 400;
+            }
+        }
+    }
+}
