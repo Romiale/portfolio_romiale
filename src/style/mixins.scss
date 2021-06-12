@@ -1,0 +1,50 @@
+@mixin d-flex-culumn-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin d-flex-row-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin d-flex-row-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin d-flex-row-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin section-title {
+    font-size: 2.8em;
+    font-family: 'Roboto',
+        sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    color: white;
+
+    @media (max-width:770px) {
+        font-size: 2em;
+    }
+}
+
+@mixin button {
+    font-family: 'Roboto',
+        sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 1.5%;
+    border-radius: 5px;
+    border: unset;
+
+    &:hover {
+        background-color: #fff;
+        color: #098DF1;
+        transition: ease-in-out 0.3s;
+    }
+}

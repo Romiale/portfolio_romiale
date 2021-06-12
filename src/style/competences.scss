@@ -1,0 +1,121 @@
+@import '../style/mixins.scss';
+@import '../style/colors.scss';
+
+.competences {
+    background-color: $bleu_color;
+    height: auto;
+    width: 100%;
+    @include d-flex-row-center;
+    flex-wrap: wrap;
+
+    .competences_comment {
+        width: 50%;
+        padding: 3% 8%;
+        background-image: url('../images/competence.svg');
+        background-size: 30%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        @media (max-width:770px) {
+            width: 100%;
+        }
+
+        h2 {
+            @include section-title;
+            color: white;
+        }
+
+        hr {
+            margin: 2% 10%;
+            width: 60%;
+            height: 3px;
+            background-color: $dark_color;
+        }
+
+        span {
+            color: $dark_color;
+            font-size: 1.5em;
+            line-height: 20px;
+            padding: 10% 0;
+        }
+
+        p {
+            font-family: 'Roboto',
+                sans-serif;
+            font-size: 1em;
+            font-weight: 500;
+            width: 100%;
+            color: white;
+
+        }
+
+
+    }
+
+    .competences_level {
+        width: 50%;
+        @include d-flex-culumn-center;
+
+        @media (max-width:770px) {
+            width: 100%;
+            padding: 3% 8%;
+        }
+
+        div {
+            width: 80%;
+            margin: 0.3% 0;
+
+            @media (max-width:770px) {
+                width: 100%;
+            }
+
+            p {
+                font-weight: bold;
+                margin: 0;
+                color: white;
+            }
+
+            .competences_bar {
+                height: 10px;
+                width: 90%;
+                background: #fff;
+                border-radius: 5px;
+
+                @media (max-width:770px) {
+                    width: 100%;
+                }
+
+                div {
+                    background: $dark_color;
+                    width: 95%;
+                    height: 100%;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        div:nth-child(2) {
+            .competences_bar {
+                div {
+                    width: 90%;
+                }
+            }
+        }
+
+        div:nth-child(3) {
+            .competences_bar {
+                div {
+                    width: 83%;
+                }
+            }
+        }
+
+        div:nth-child(4) {
+            .competences_bar {
+                div {
+                    width: 85%;
+                }
+            }
+        }
+    }
+}

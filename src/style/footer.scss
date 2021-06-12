@@ -1,0 +1,76 @@
+@import '../style/mixins.scss';
+@import '../style/colors.scss';
+
+footer {
+    background-color: black;
+    padding: 3% 10%;
+    @include d-flex-row-evenly;
+    flex-wrap: wrap;
+
+    div:nth-child(1) {
+        @include d-flex-culumn-center;
+        width: 50%;
+
+        @media (max-width:770px) {
+            width: 90%;
+            font-size: 1em;
+        }
+
+        img {
+            width: 40%;
+        }
+
+        .title {
+            color: $bleu_color;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1em;
+            color: white;
+        }
+
+        .reseaux {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+
+            img {
+                width: 7%;
+                margin: 2%;
+            }
+        }
+    }
+
+    div:nth-child(2) {
+        width: 50%;
+        background-image: url('../images/Polygon\ 1.svg');
+        background-position: right;
+        background-size: 40%;
+        background-repeat: no-repeat;
+
+        @media (max-width:770px) {
+            width: 90%;
+            font-size: 1em;
+        }
+
+        address {
+            font-size: 1.2em;
+            color: white;
+
+            p {
+                margin: 0;
+            }
+
+            a {
+                color: $bleu_color;
+                transition: 0.1s;
+
+                &:hover {
+                    border-bottom: solid 3px white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import '../style/mixins.scss';
+@import '../style/colors.scss';
+
+.navbar {
+    top: 0;
+    background-color: $dark_color;
+    box-shadow: 0px 1px 5px rgba(255, 255, 255, 0.746);
+    position: fixed;
+    z-index: 99;
+
+    .collapse {
+        width: 100%;
+        @include d-flex-row-evenly;
+
+        .image_logo {
+            width: 13%;
+            height: 100%;
+            margin: 0;
+
+            img {
+                width: 100%
+            }
+        }
+    }
+
+}
+
+.group_items {
+    @include d-flex-row-evenly;
+    width: 50%;
+    margin: 0;
+
+    li {
+        font-family: 'Roboto',
+            sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        list-style: none;
+        color: white;
+
+        &:hover {
+            color: $bleu_color;
+            cursor: pointer;
+            transition: ease 0.3s;
+        }
+
+        &.active {
+            color: $bleu_color;
+            border-bottom: solid 3px white;
+        }
+    }
+}
