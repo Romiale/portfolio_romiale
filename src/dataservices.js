@@ -10,7 +10,7 @@ const services = [
         },
         {
             title: "UI et UX design",
-            description: "Bésoin d'un designer qualifier pour votre projet le plus precieux et bésoin d'une expérience client optimisée ? je suis là pour vous..."
+            description: "Bésoin d'un designer qualifié pour votre projet le plus precieux et bésoin d'une expérience client optimisée ? je suis là pour vous..."
         },
  ]
 module.exports= services;

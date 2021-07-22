@@ -14,6 +14,8 @@
 
     @media (max-width:770px) {
         padding: 5%;
+        width: 98%;
+        padding: 6% 0;
     }
 
     h2 {
@@ -84,7 +86,6 @@
         p {
             font-family: 'Roboto', sans-serif;
             font-size: 1em;
-            font-weight: 500;
             width: 90%;
             color: white;
             text-align: justify;
@@ -97,6 +98,7 @@
             color: white;
             @include button;
             margin-right: 3%;
+
 
             @media (max-width:412px) {
                 display: block;

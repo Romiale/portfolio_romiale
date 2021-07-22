@@ -8,17 +8,24 @@
     position: fixed;
     z-index: 99;
 
+    div {
+        button {
+            i {
+                color: white;
+            }
+        }
+    }
+
     .collapse {
         width: 100%;
-        @include d-flex-row-evenly;
 
         .image_logo {
-            width: 13%;
+            width: 27%;
             height: 100%;
-            margin: 0;
+            @include d-flex-row-center;
 
             img {
-                width: 100%
+                width: 50%
             }
         }
     }
@@ -27,7 +34,7 @@
 
 .group_items {
     @include d-flex-row-end;
-    width: 65%;
+    width: 67%;
     margin: 0;
 
     li {
@@ -37,8 +44,7 @@
         a {
             font-family: 'Roboto',
                 sans-serif;
-            font-size: 1em;
-            font-weight: 700;
+            font-size: 1.2em;
             color: $bleu_color;
 
             &:hover {

@@ -7,7 +7,13 @@ function Competences() {
                 <h2>Mes compétences</h2>
                 <hr />
                 <span>Bésoin d'un dévéloppeur qualifié et familier aux nouvelles téchnologies ?,</span> <br />
-                <p> Vous etes au bon endroit ! Avec la maitrise des téchnologies back et front-end, du web design et du SEO je suis prets à intégrer votre et à travailler sur vos projets.</p>
+                <p> Mon esprit créatif doublé de mes
+                connaissances techniques me
+                permettent d'etre Extrêmement
+                motivé et développer constamment
+                mes compétences qui me donnent
+                d'être efficace en équipe ou seul face
+aux problèmes à résoudre.</p>
             </div>
             <div className="competences_level">
                 <div>
