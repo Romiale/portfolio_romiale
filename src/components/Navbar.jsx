@@ -1,6 +1,7 @@
 import React from 'react'
 import '../style/navbar.scss'
 import logo from '../images/logo.svg'
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Navbar() {
     return (
@@ -22,10 +23,10 @@ function Navbar() {
                         <img src={logo} alt="logo" />
                     </div>
                     <ul className="group_items">
-                        <li className="active">Acceuil</li>
-                        <li>Apropos</li>
-                        <li>Réalisations</li>
-                        <li>Compétences</li>
+                        <li><Link to="#home">Acceuil</Link></li>
+                        <li><Link to="#apropos">À propos</Link></li>
+                        <li><Link to="#réalisations">Réalisations</Link></li>
+                        <li><Link to="#competences">Compétences</Link></li>
                     </ul>
                 </div>
             </div>

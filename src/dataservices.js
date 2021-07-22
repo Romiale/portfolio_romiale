@@ -2,15 +2,15 @@
 const services = [
         {
             title: "Web et web-mobile",
-            description: "Développement des applications avec un design visualisable sur tout type d'écran tout en restant fonctionnelle"
+            description: "Développement d'applications avec un design visualisable sur tout type d'écran tout en restant fonctionnelle"
         },
         {
             title: "Backend et Frontend",
-            description: "Projets allant de l'affichage d'informations jusqu'au traitement des données"
+            description: "Epérimantez la touche d'un passionné sur vos projets allant de l'affichage d'informations jusqu'au traitement de données"
         },
         {
             title: "UI et UX design",
-            description: "Bésoin de revoir ou d'avoir un design répondant aux critères et d'une expérience client optimisée ? je suis là pour vous..."
+            description: "Bésoin d'un designer qualifier pour votre projet le plus precieux et bésoin d'une expérience client optimisée ? je suis là pour vous..."
         },
  ]
 module.exports= services;

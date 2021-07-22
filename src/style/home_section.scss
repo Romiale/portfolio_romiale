@@ -20,7 +20,7 @@ section.home_section {
     .home_section_comment {
         @include d-flex-culumn-center;
         width: 60%;
-        padding: 0 0 0 10%;
+        padding: 0 0 0 7%;
         background-repeat: no-repeat;
         background-size: 40%;
 
@@ -44,11 +44,11 @@ section.home_section {
             color: #fff;
         }
 
-        button {
+        a {
             background: $bleu_color;
             color: white;
             width: 20%;
-
+            text-align: center;
             @include button;
 
             @media (max-width:770px) {

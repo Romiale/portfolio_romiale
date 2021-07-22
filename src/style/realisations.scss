@@ -35,7 +35,7 @@
             }
 
             @media (max-width:770px) {
-                width: 45%;
+                width: 95%;
                 margin: 1%;
             }
 
@@ -43,7 +43,7 @@
                 width: 100%;
                 background-color: $gray_color;
                 border-radius: 5px;
-                padding: 4% 4% 0 4%;
+                padding: 2% 2% 0 2%;
 
                 img {
                     width: 100%;
@@ -86,9 +86,12 @@
                         background-color: $bleu_color;
                     }
 
-                    img {
-                        width: 100%;
+                    a {
+                        img {
+                            width: 100%;
+                        }
                     }
+
                 }
             }
         }

@@ -4,7 +4,6 @@ import ProjectItem from '../components/ProjectItem';
 import projects from '../projects.json';
 import kd from '../images/kd.png';
 import cine from '../images/cine.png';
-import frombg from '../images/formbg.jpg';
 import maquette3 from '../images/maquette3.jpg';
 import protfolio from '../images/portfolio.png';
 import visite from '../images/visite.png';
@@ -12,7 +11,7 @@ import visite from '../images/visite.png';
 function Realisations() {
 
     return (
-        <section className="projects">
+        <section className="projects" id="réalisations">
             <div>
                 <h2>Mes réalisations</h2>
                 <hr />

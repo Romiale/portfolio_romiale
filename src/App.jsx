@@ -7,19 +7,21 @@ import Realisations from '../src/components/Realisations';
 import Competences from '../src/components/Competences';
 import Contact from '../src/components/Contact';
 import Footer from '../src/components/Footer';
-
+import { HashRouter } from 'react-router-dom';
 
 function App() {
     return (
         <div>
-            <Navbar />
-            <HomeSection />
-            <AboutSection />
-            <Services />
-            <Realisations />
-            <Competences />
-            <Contact />
-            <Footer />
+            <HashRouter>
+                <Navbar />
+                <HomeSection />
+                <AboutSection />
+                <Services />
+                <Realisations />
+                <Competences />
+                <Contact />
+                <Footer />
+            </HashRouter>
         </div>
     )
 }

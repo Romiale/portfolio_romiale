@@ -10,7 +10,7 @@
     background-position: right;
     width: 100%;
     height: auto;
-    padding: 5% 0;
+    padding: 5% 0 8% 0;
 
     @media (max-width:770px) {
         padding: 5%;
@@ -21,18 +21,18 @@
         color: $bleu_color;
         margin: 0 auto;
         text-align: left;
-        padding: 0% 5% 2% 5%;
+        padding: 0% 5% 2% 0%;
     }
 
     hr {
-        margin: 0 15%;
+        margin: 0 10%;
         width: 20%;
         height: 3px;
         background-color: $bleu_color;
     }
 
     .about_information {
-        @include d-flex-row-center;
+        @include d-flex-row-evenly;
         flex-wrap: wrap;
         align-items: center;
     }
@@ -44,8 +44,8 @@
         height: 100%;
         background: $bleu_color;
         border-radius: 10px;
-        margin-top: 2%;
-        margin-right: 5%;
+        margin-top: 4%;
+        margin-left: 4%;
 
         img {
             width: 100%;
@@ -61,7 +61,8 @@
     }
 
     .About_section-comment {
-        width: 45%;
+        width: 55%;
+        margin-left: 5%;
 
         @media (max-width:770px) {
             width: 100%;
@@ -87,15 +88,33 @@
             width: 90%;
             color: white;
             text-align: justify;
+            margin-bottom: 6%;
+
         }
 
-        button {
+        a {
             background-color: $bleu_color;
             color: white;
             @include button;
+            margin-right: 3%;
 
+            @media (max-width:412px) {
+                display: block;
+                text-align: center;
+                margin-top: 2%;
+            }
 
+            &.link_white {
+                background-color: rgb(255, 255, 255);
+                color: $bleu_color;
+                transition: 0.3s;
 
+                &:hover {
+                    background-color: $bleu_color;
+                    color: white;
+                }
+            }
         }
+
     }
 }

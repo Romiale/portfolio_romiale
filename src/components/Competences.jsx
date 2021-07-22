@@ -2,7 +2,7 @@ import React from 'react'
 import '../style/competences.scss'
 function Competences() {
     return (
-        <section className="competences">
+        <section className="competences" id="competences">
             <div className="competences_comment">
                 <h2>Mes compétences</h2>
                 <hr />

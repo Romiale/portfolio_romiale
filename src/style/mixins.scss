@@ -20,6 +20,11 @@
     justify-content: space-between;
 }
 
+@mixin d-flex-row-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
 @mixin section-title {
     font-size: 2.8em;
     font-family: 'Roboto',
@@ -38,8 +43,8 @@
         sans-serif;
     font-size: 1.1em;
     font-weight: 700;
-    padding: 1.5%;
-    border-radius: 5px;
+    padding: 1.1% 1.6%;
+    border-radius: 30px;
     border: unset;
 
     &:hover {
