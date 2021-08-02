@@ -18,7 +18,7 @@ function AboutSection() {
                     <p>je suis développeur fullstack pationné du numérique avec beaucoup d'expérience dans le monde du développement web et web mobile, avec plusieurs réalisations validées par des clients satisfaits.</p>
                     <p> Spécialisé dans le domaine du développement web et web mobile allant du front-end jusqu'au back-and, le UI et UX design.</p>
                     <a href="mailto:romialengoy5@gmail.com">Me contacter</a>
-                    <a className="link_white" href={cv} download>Télécharger Mon CV</a>
+                    <a className="link_white" href={cv} download>Télécharger mon CV</a>
                 </div>
             </div>
         </section>

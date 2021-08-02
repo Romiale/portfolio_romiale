@@ -10,7 +10,7 @@ function HomeSection() {
 
             <div className="home_section_comment">
                 <h1>Salut !, je suis Romiale Ngoy</h1>
-                <p>Développeur full stack, UI et UX designer expérimenté dans le domaine du web et web-mobile avec plus de 5 ans d'expériance dans le domaine</p>
+                <p>Développeur full stack, UI et UX designer expérimenté dans le domaine du web et web-mobile </p>
                 <a href="mailto:romialengoy5@gmail.com">Me contacter</a>
             </div>
             <div className="home_section_image" data-aos="fade-down">
