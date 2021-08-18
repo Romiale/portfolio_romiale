@@ -3,7 +3,7 @@
 
 .contact {
     width: 100%;
-    padding: 2%;
+    padding: 2% 2% 20% 2%;
     height: auto;
     background-color: $dark_color;
     background-image: url('../images/Polygon\ 1.svg');
@@ -14,15 +14,18 @@
         0 3px 14px 2px rgb(0 0 0 / 12%),
         0 5px 5px -3px rgb(0 0 0 / 20%);
 
+    @media (max-width:770px) {
+        width: 100%;
+        padding-bottom: 20%;
+    }
+
+
+
     h2 {
         @include section-title;
         text-align: center;
     }
 
-    @media (max-width:770px) {
-        width: 100%;
-        padding: 4% 0;
-    }
 
     hr {
         margin: 2% auto;
@@ -103,7 +106,6 @@
                 width: 95%;
                 margin: 0 auto;
                 background-color: rgb(205, 222, 245);
-                ;
 
                 &:focus {
                     outline: unset;
