@@ -5,6 +5,7 @@ import projects from '../projects.json';
 import kd from '../images/kd.png';
 import cine from '../images/cine.png';
 import maquette3 from '../images/maquette3.jpg';
+import maquettage from '../images/maquettage.png';
 import protfolio from '../images/portfolio.png';
 import visite from '../images/visite.png';
 
@@ -21,7 +22,7 @@ function Realisations() {
                 <ProjectItem projectImage={kd} project={projects[1]} />
                 <ProjectItem projectImage={protfolio} project={projects[2]} />
                 <ProjectItem projectImage={cine} project={projects[3]} />
-                <ProjectItem projectImage={maquette3} project={projects[4]} />
+                <ProjectItem projectImage={maquettage} project={projects[4]} />
                 <ProjectItem projectImage={visite} project={projects[5]} />
             </div>
         </section>

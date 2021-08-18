@@ -15,9 +15,9 @@ function Footer() {
                     <p className="title"> Bésoin de plus d'informations ?</p>
                     <p>Rétrouvez-moi sur les réseaux sociaux, je répond plus rapidement aux messages et mails. à bientot !</p>
                     <div className="reseaux">
-                        <img src={facebook} alt="facebook" />
-                        <img src={email} alt="email" />
-                        <img src={linkedin} alt="linkedin" />
+                        <div><img src={facebook} alt="facebook" /></div>
+                        <div> <img src={email} alt="email" /></div>
+                        <div> <img src={linkedin} alt="linkedin" /></div>
                     </div>
                 </div>
                 <div>

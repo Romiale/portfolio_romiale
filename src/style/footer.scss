@@ -8,7 +8,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 
     .footer_group_info {
         padding: 3% 5%;
@@ -16,7 +16,7 @@ footer {
         margin-top: -10%;
         width: 90%;
         border-radius: 15px;
-        background-color: black;
+        background-color: rgba(0, 0, 0);
         @include d-flex-row-evenly;
         flex-wrap: wrap;
         box-shadow: 0 8px 10px 1px rgb(0 0 0 / 14%),
@@ -57,10 +57,18 @@ footer {
                 display: flex;
                 justify-content: flex-start;
 
-                img {
-                    width: 7%;
-                    margin: 2%;
+                div {
+                    width: 8%;
+                    margin: 1%;
+                    box-shadow: 0 8px 10px 1px rgb(0 0 0 / 14%),
+                        0 3px 14px 2px rgb(0 0 0 / 12%),
+                        0 5px 5px -3px rgb(0 0 0 / 20%);
+
+                    img {
+                        width: 100%;
+                    }
                 }
+
             }
         }
 
