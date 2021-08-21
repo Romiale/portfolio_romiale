@@ -15,8 +15,8 @@ function AboutSection() {
                 </div>
                 <div className="About_section-comment">
                     <h3>Je suis Romiale Ngoy <br /> <span>Qui suis-je ?,</span></h3>
-                    <p>je suis développeur fullstack pationné du numérique avec beaucoup d'expérience dans le monde du développement web et web mobile, avec plusieurs réalisations validées par des clients satisfaits.</p>
-                    <p> Spécialisé dans le domaine du développement web et web mobile allant du front-end jusqu'au back-and, le UI et UX design.</p>
+                    <p>Je suis développeur fullstack pationné du numérique avec beaucoup d'expérience dans le monde du développement web et web mobile, avec plusieurs réalisations validées par des clients satisfaits.</p>
+                    <p> Pour moi la qualité du code, la satisfaction du client, une équipe motivée sont primordiales.</p>
                     <a href="mailto:romialengoy5@gmail.com">Me contacter</a>
                     <a className="link_white" href={cv} >Télécharger mon CV</a>
                 </div>

@@ -30,7 +30,7 @@ function Footer() {
                     </address>
                 </div>
             </div>
-            <p>&#169;  Copyright  2020 Tous droits réservés</p>
+            <p>&#169;  Copyright  2021 Tous droits réservés</p>
         </footer>
     )
 }

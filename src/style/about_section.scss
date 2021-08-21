@@ -94,6 +94,10 @@
             text-align: justify;
             margin-bottom: 6%;
 
+            &:nth-child(3) {
+                font-size: 1.3em;
+                font-weight: bold;
+            }
         }
 
         a {
