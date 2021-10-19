@@ -83,7 +83,11 @@
             text-align: justify;
             margin-bottom: 6%;
             margin-top: 6%;
-
+            span{
+                animation: timer .85s infinite;
+                color: rgb(209, 150, 150);
+                font-size: 2rem;
+            }
         }
 
         a{
@@ -99,7 +103,7 @@
 
             &:nth-child(2) {
                 background-color: rgba(255, 255, 255, 0);
-                transition: 0.3s;
+                transition: 5s;
                 opacity: 0.79;
                 border: solid white 1px;
 
@@ -113,17 +117,22 @@
     }
 }
 
-@keyframes rotate {
+@keyframes timer {
     0% {
-        transform: rotateY(0deg);
+        color:$dark_color;
     }
 
     50% {
-        transform: rotateY(180deg);
+        color: white;
+        
     }
 
     100% {
-        transform: rotateY(0deg);
+        color: white;
+        
     }
-
+     100% {
+        color:$dark_color;
+        
+    }
 }
