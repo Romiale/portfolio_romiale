@@ -39,8 +39,8 @@ section.home_section {
 
         p {
             font-size: 1em;
-            font-family: 'Roboto', sans-serif;
             color: #fff;
+            margin: 4% 0;
         }
 
         a {
@@ -48,8 +48,7 @@ section.home_section {
             color: white;
             width: 20%;
             text-align: center;
-            @include button;
-
+            padding: 3%;
             @media (max-width:770px) {
                 width: 40%;
                 margin: 1%;

@@ -2,8 +2,12 @@
 @import '../style/colors.scss';
 
 .competences {
-    background-color: $bleu_color;
+    background-color: rgb(205, 222, 245);
     height: auto;
+    padding: 5% 0;
+    background-image: url('../images/competence.svg');
+    background-size: 30%;
+    background-repeat: no-repeat;
     width: 100%;
     @include d-flex-row-center;
     flex-wrap: wrap;
@@ -11,22 +15,21 @@
     .competences_comment {
         width: 50%;
         padding: 3% 8%;
-        background-image: url('../images/competence.svg');
         background-size: 30%;
         background-repeat: no-repeat;
         background-position: bottom;
-
+        
         @media (max-width:770px) {
             width: 100%;
         }
 
         h2 {
             @include section-title;
-            color: white;
+            color: $dark_color;
         }
 
         hr {
-            margin: 2% 10%;
+            margin:2% 10% 10% 10%;
             width: 60%;
             height: 3px;
             background-color: $dark_color;
@@ -40,12 +43,9 @@
         }
 
         p {
-            font-family: 'Roboto',
-                sans-serif;
-            font-size: 1em;
-            font-weight: 500;
             width: 100%;
-            color: white;
+            color: $bleu_color;
+            margin: 5% 0;
 
         }
 
@@ -54,7 +54,9 @@
 
     .competences_level {
         width: 50%;
-        @include d-flex-culumn-center;
+        padding: 5%;
+        display: flex;
+        flex-wrap: wrap;
 
         @media (max-width:770px) {
             width: 100%;
@@ -62,59 +64,25 @@
         }
 
         div {
-            width: 80%;
-            margin: 0.3% 0;
-
-            @media (max-width:770px) {
-                width: 100%;
-            }
-
+            margin: 2%;
+            height: max-content;
+            @include d-flex-culumn-center;
             p {
                 font-weight: bold;
                 margin: 0;
-                color: white;
+                color: $dark_color;
+                text-align: center;
             }
 
             .competences_bar {
-                height: 10px;
-                width: 90%;
-                background: #fff;
-                border-radius: 5px;
+              width: 5rem;
+              height: 5rem;
+              background-color: #fff;
 
-                @media (max-width:770px) {
-                    width: 100%;
-                }
-
-                div {
-                    background: $dark_color;
-                    width: 95%;
-                    height: 100%;
-                    border-radius: 5px;
-                }
+               img{
+                width: 100%;
+                height: 100%;
             }
-        }
-
-        div:nth-child(2) {
-            .competences_bar {
-                div {
-                    width: 90%;
-                }
-            }
-        }
-
-        div:nth-child(3) {
-            .competences_bar {
-                div {
-                    width: 83%;
-                }
-            }
-        }
-
-        div:nth-child(4) {
-            .competences_bar {
-                div {
-                    width: 85%;
-                }
             }
         }
     }

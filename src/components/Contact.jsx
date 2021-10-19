@@ -9,13 +9,13 @@ function Contact() {
             <div className="form">
                 <div>
                     <h3>Informations</h3>
-                    <p>Je vous prie de fournir des informations de la manière la plus précise et consise pour une meilleure collaboration Svp.</p>
+                    <p>Je vous prie de fournir des informations de la manière la plus précise et consise pour une meilleure collaboration SVP.</p>
                 </div>
                 <form>
                     <input type="email" placeholder="E-mail" required />
                     <textarea name="message" id="message" placeholder="Message" required>
                     </textarea>
-                    <button>Envoyer</button>
+                    <button className="btn btn-primary">Envoyer</button>
                 </form>
             </div>
         </section>

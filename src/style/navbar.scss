@@ -42,15 +42,18 @@
     li {
         list-style: none;
         margin: 0 3%;
-
+         
         a {
+            position: relative;
             font-family: 'Roboto',
                 sans-serif;
             font-size: 1.2em;
             color: $bleu_color;
-
+            border-bottom: solid 0 $bleu_color;
+          
             &:hover {
                 color: white;
+                border-bottom: solid .3rem $bleu_color;
                 cursor: pointer;
                 transition: ease 0.3s;
             }

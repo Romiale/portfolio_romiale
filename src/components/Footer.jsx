@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../images/logo.svg'
 import facebook from '../images/facebook.svg'
-import email from '../images/gmail.svg'
+import email from '../images/gmail (2).svg'
 import linkedin from '../images/linkedin.svg'
 import '../style/footer.scss';
 
@@ -13,7 +13,7 @@ function Footer() {
                 <div className="footer_information">
                     <img src={logo} alt="logo portfolio romiale" />
                     <p className="title"> Bésoin de plus d'informations ?</p>
-                    <p>Rétrouvez-moi sur les réseaux sociaux, je répond plus rapidement aux messages et mails. à bientot !</p>
+                    <p>Rétrouvez-moi sur les réseaux sociaux, je répond plus rapidement aux messages et mails.</p>
                     <div className="reseaux">
                         <div><img src={facebook} alt="facebook" /></div>
                         <div> <img src={email} alt="email" /></div>

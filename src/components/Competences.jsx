@@ -1,5 +1,15 @@
 import React from 'react'
 import '../style/competences.scss'
+import html from '../images/technos/html5.svg'
+import css3 from '../images/technos/css3.svg'
+import javascript from '../images/technos/javascript.svg'
+import react from '../images/technos/react.svg'
+import php from '../images/technos/php.svg'
+import laravel from '../images/technos/laravel.svg'
+import node from '../images/technos/node.svg'
+import mongodb from '../images/technos/mongodb.svg'
+import mysql from '../images/technos/mysqltwo.svg'
+
 function Competences() {
     return (
         <section className="competences" id="competences">
@@ -17,27 +27,75 @@ aux problèmes à résoudre.</p>
             </div>
             <div className="competences_level">
                 <div>
-                    <p>HTML</p>
+                    <p>HTML 5</p>
                     <div className="competences_bar">
-                        <div></div>
+                        <div> 
+                            <img src={html} alt="html"/>
+                        </div>
                     </div>
                 </div>
                 <div>
-                    <p>Css, Sass</p>
+                    <p>Css 3</p>
                     <div className="competences_bar">
-                        <div></div>
+                        <div>
+                            <img src={css3} alt="css3"/>
+                        </div>
                     </div>
                 </div>
                 <div>
-                    <p>Javascript, React</p>
+                    <p>Javascript</p>
                     <div className="competences_bar">
-                        <div></div>
+                        <div>
+                            <img src={javascript} alt="javascript"/>
+                        </div>
                     </div>
                 </div>
                 <div>
-                    <p>PHP, Laravel</p>
+                    <p>React</p>
                     <div className="competences_bar">
-                        <div></div>
+                        <div>
+                            <img src={react} alt="react"/>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>PHP</p>
+                    <div className="competences_bar">
+                        <div>
+                            <img src={php} alt="php"/>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Laravel</p>
+                    <div className="competences_bar">
+                        <div>
+                            <img src={laravel} alt="laravel"/>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Node</p>
+                    <div className="competences_bar">
+                        <div>
+                            <img src={node} alt="node"/>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Mysql</p>
+                    <div className="competences_bar">
+                        <div>
+                            <img src={mysql} alt="node"/>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>MongoDB</p>
+                    <div className="competences_bar">
+                        <div>
+                            <img src={mongodb} alt="node"/>
+                        </div>
                     </div>
                 </div>
             </div>

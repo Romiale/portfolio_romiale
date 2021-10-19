@@ -6,7 +6,7 @@ const services = [
         },
         {
             title: "Backend et Frontend",
-            description: "Epérimantez la touche d'un passionné sur vos projets allant de l'affichage d'informations jusqu'au traitement de données"
+            description: "Expérimantez la touche d'un passionné sur vos projets allant de l'affichage d'informations jusqu'au traitement de données"
         },
         {
             title: "UI et UX design",

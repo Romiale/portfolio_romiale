@@ -3,7 +3,7 @@
 
 .contact {
     width: 100%;
-    padding: 2% 2% 20% 2%;
+    padding: 5% 2% 15% 2%;
     height: auto;
     background-color: $dark_color;
     background-image: url('../images/Polygon\ 1.svg');
@@ -37,8 +37,8 @@
     .form {
 
         width: 70%;
-        height: 350px;
-        margin: 3% auto;
+        height: 450px;
+        margin: 10% auto;
         border-radius: 3px;
         background-color: $bleu_color;
         @include d-flex-row-center;
@@ -52,8 +52,8 @@
 
         div {
             width: 45%;
-            padding: 3%;
             height: 100%;
+            padding: 0% 5% 3% 0;
             border-top-left-radius: 3px;
             border-bottom-left-radius: 3px;
             display: flex;
@@ -62,8 +62,7 @@
             align-content: center;
             background-image: url('../images/Group13.svg');
             background-repeat: no-repeat;
-            background-size: 65%;
-            background-position: top;
+            background-size: 70%;
 
             @media (max-width:770px) {
                 width: 100%;
@@ -102,7 +101,7 @@
 
             input {
                 border: unset;
-                border-bottom: solid 3px $dark_color;
+                border-bottom: solid 1px $dark_color;
                 width: 95%;
                 margin: 0 auto;
                 background-color: rgb(205, 222, 245);
@@ -118,7 +117,7 @@
 
             textarea {
                 border: unset;
-                border-bottom: solid 3px $dark_color;
+                border-bottom: solid 1px $dark_color;
                 width: 95%;
                 height: 40%;
                 margin: 0 auto;
@@ -136,9 +135,7 @@
             }
 
             button {
-                @include button;
                 width: 25%;
-                background-color: $dark_color;
                 color: white;
                 position: absolute;
                 bottom: 3%;
@@ -150,9 +147,6 @@
                     width: 30%;
                 }
 
-                &:hover {
-                    background: $dark_color;
-                }
             }
         }
     }

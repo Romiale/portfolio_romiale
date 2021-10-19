@@ -4,11 +4,11 @@
 .services {
     @include d-flex-row-center;
     flex-wrap: wrap;
-    padding: 2%;
+    padding: 10% 0;
     height: auto;
     width: 100%;
-    background-color: $bleu_color;
-
+    background-color: rgb(205, 222, 245);
+    
     .services_comment {
         width: 20%;
         padding-left: 4%;
@@ -19,7 +19,7 @@
         }
 
         h3 {
-            color: white;
+            color: $dark_color;
         }
 
         p {
@@ -27,9 +27,7 @@
             background-size: 60%;
             background-repeat: no-repeat;
             background-position: bottom;
-            color: white;
-            font-size: 0.9em;
-            font-weight: 400;
+            color: $dark_color;
         }
     }
 
@@ -40,6 +38,7 @@
 
         @media (max-width:770px) {
             width: 100%;
+
         }
 
         div {
@@ -63,6 +62,8 @@
                 margin: 2%;
                 padding: 10% 4%;
                 height: auto;
+                background:unset;
+                box-shadow: unset;
             }
 
             img {
@@ -74,7 +75,14 @@
                 color: $bleu_color;
                 font-size: 1.3em;
             }
-
+             p {
+                color: white;
+                font-size: 0.9em;
+                font-weight: 400;
+                @media (max-width:412px) {
+                    color: $dark_color;
+                }
+            }
             &:nth-child(2) {
                 img {
                     width: 30%;
@@ -82,15 +90,13 @@
 
                 p {
                     border-bottom: 3px solid $bleu_color;
-                    padding-bottom: 3%;
+                    padding-bottom: 10%;
+                    font-size: 0.9em;
+                    font-weight: 400;
                 }
             }
 
-            p {
-                color: white;
-                font-size: 0.9em;
-                font-weight: 400;
-            }
+           
         }
     }
 }
