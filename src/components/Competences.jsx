@@ -9,6 +9,8 @@ import laravel from '../images/technos/laravel.svg'
 import node from '../images/technos/node.svg'
 import mongodb from '../images/technos/mongodb.svg'
 import mysql from '../images/technos/mysqltwo.svg'
+import cv from '../documents/CV_romiale_ngoy.pdf'
+
 
 function Competences() {
     return (
@@ -22,8 +24,8 @@ function Competences() {
                 permettent d'etre Extrêmement
                 motivé et développer constamment
                 mes compétences qui me donnent
-                d'être efficace en équipe ou seul face
-aux problèmes à résoudre.</p>
+                d'être efficace en équipe ou seul faceaux problèmes à résoudre.</p>
+                <a className="btn btn-outline-primary p-4" href={cv} >Télécharger mon CV</a>
             </div>
             <div className="competences_level">
                 <div>
