@@ -10,7 +10,7 @@ function AboutSection() {
                 <div className="profile" data-aos="fade-down">
                 </div>
                 <div className="About_section-comment">
-                    <h2 className="container" id="apropos">À propos de moi</h2>
+                    <h2 className="container" id="apropos">À PROPOS DE MOI</h2>
                     <hr />
                     <p>Je suis développeur fullstack pationné du numérique avec beaucoup d'expérience dans le monde du développement web et web mobile, avec plusieurs réalisations validées par des clients satisfaits.</p>
                     <p> Pour moi la qualité du code, la satisfaction du client, une équipe motivée sont primordiales<span>|</span> </p>

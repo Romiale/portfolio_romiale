@@ -26,7 +26,7 @@ function Navbar() {
                         </div>
                         <ul className="group_items navbar-nav">
                             <li><Link to="#home">Accueil</Link></li>
-                            <li><Link to="#apropos">À propos</Link></li>
+                            <li><Link to="#apropos">À propos de moi</Link></li>
                             <li><Link to="#réalisations">Réalisations</Link></li>
                             <li><Link to="#competences">Compétences</Link></li>
                         </ul>

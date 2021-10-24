@@ -12,7 +12,7 @@ function Footer() {
             <div className="footer_group_info">
                 <div className="footer_information">
                     <img src={logo} alt="logo portfolio romiale" />
-                    <p className="title"> Bésoin de plus d'informations ?</p>
+                    <p className="title"> Besoin de plus d'informations ?</p>
                     <p>Rétrouvez-moi sur les réseaux sociaux, je répond plus rapidement aux messages et mails.</p>
                     <div className="reseaux">
                         <div><img src={facebook} alt="facebook" /></div>

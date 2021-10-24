@@ -48,11 +48,12 @@
             font-family: 'Roboto',
                 sans-serif;
             font-size: 1.2em;
-            color: $bleu_color;
+            color: white;
             border-bottom: solid 0 $bleu_color;
           
             &:hover {
                 color: white;
+                color: $bleu_color;
                 border-bottom: solid .3rem $bleu_color;
                 cursor: pointer;
                 transition: ease 0.3s;

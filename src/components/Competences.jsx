@@ -16,15 +16,15 @@ function Competences() {
     return (
         <section className="competences" id="competences">
             <div className="competences_comment">
-                <h2>Mes compétences</h2>
+                <h2>MES COMPÉTENCES</h2>
                 <hr />
-                <span>Bésoin d'un dévéloppeur qualifié et familier aux nouvelles téchnologies ?,</span> <br />
+                <span>Besoin d'un développeur qualifié et familier aux nouvelles téchnologies ?,</span> <br />
                 <p> Mon esprit créatif doublé de mes
                 connaissances techniques me
                 permettent d'etre Extrêmement
                 motivé et développer constamment
                 mes compétences qui me donnent
-                d'être efficace en équipe ou seul faceaux problèmes à résoudre.</p>
+                d'être efficace en équipe ou seul face aux problèmes à résoudre.</p>
                 <a className="btn btn-outline-primary p-4" href={cv} >Télécharger mon CV</a>
             </div>
             <div className="competences_level">

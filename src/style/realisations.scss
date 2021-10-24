@@ -24,31 +24,31 @@
         @include d-flex-row-evenly;
         flex-wrap: wrap;
         padding: 3%;
-
-        .project_item {
+        a{
             width: 26%;
             margin: 2% 0;
             transition: 0.3s;
-
-            &:hover {
+              &:hover {
                 transform: scale(1.03);
                 cursor: pointer;
             }
+               @media (max-width:770px) {
+                width: 46%;
+                margin: 1%;
+            }
+
+            @media (max-width:420px) {
+                width: 95%;
+                height: 20rem;
+                margin: 1%;
+            }
+            .project_item {
 
             &:focus+.project_link {
                 cursor: pointer;
             }
 
-            @media (max-width:770px) {
-                width: 46%;
-                margin: 1%;
-            }
-
-            @media (max-width:412px) {
-                width: 35%;
-                height: 10rem;
-                margin: 1%;
-            }
+         
 
             div:nth-child(1) {
                 width: 100%;
@@ -116,6 +116,7 @@
                     }
 
                 }
+            }
             }
         }
 

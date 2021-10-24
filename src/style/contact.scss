@@ -83,7 +83,7 @@
 
         form {
             position: relative;
-            background-color: rgb(205, 222, 245);
+            background-color:#fff;
             width: 50%;
             height: 90%;
             border-bottom-left-radius: 3px;
@@ -104,7 +104,7 @@
                 border-bottom: solid 1px $dark_color;
                 width: 95%;
                 margin: 0 auto;
-                background-color: rgb(205, 222, 245);
+                background-color: white;
 
                 &:focus {
                     outline: unset;
@@ -121,7 +121,7 @@
                 width: 95%;
                 height: 40%;
                 margin: 0 auto;
-                background-color: rgb(205, 222, 245);
+                background-color: white;
 
 
                 &:focus {

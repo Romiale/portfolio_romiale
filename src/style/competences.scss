@@ -2,7 +2,7 @@
 @import '../style/colors.scss';
 
 .competences {
-    background-color: rgb(205, 222, 245);
+    background-color: rgb(255, 255, 255);
     height: auto;
     padding: 5% 0;
     background-image: url('../images/competence.svg');
@@ -75,8 +75,8 @@
             }
 
             .competences_bar {
-              width: 5rem;
-              height: 5rem;
+              width: 3.4rem;
+              height: 3.4rem;
 
                img{
                 width: 100%;
